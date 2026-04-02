@@ -1,9 +1,7 @@
 package com.example.consumer;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-import jakarta.persistence.Column;
+import jakarta.persistence.*;
+
 import java.time.LocalDateTime;
 
 @Entity
@@ -11,6 +9,7 @@ import java.time.LocalDateTime;
 public class Order {
 
     @Id
+
     private String id;
 
     // Names match JSON keys
